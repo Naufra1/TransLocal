@@ -40,8 +40,8 @@ nav{
     display: inline-block;
     font-size: 23px;
     padding: 15px;
-    border: 1px solid black;
 }
+
 .menu a{
     display: block;
     justify-content: space-between;
