@@ -12,7 +12,9 @@
 <body>
     <header class="header">
         <nav>
+            <figure>
             <img src="imagens/Logo - TransMundi.jpeg" alt="Logo: TransMundi">
+            </figure>
             <ul class="menu">
             <a href="index.html"><li>Início</li></a>
             <a href="quem.html"><li>Quem Somos</li></a>
@@ -24,7 +26,45 @@
     </header>
 
     <main>
-
+        <form action="POST">
+            <h1>Formulário</h1>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome_usuario" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="___.___.___-__" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email_usuario" id="email" required>
+            </div>
+            <div>
+                <label for="cel">Telefone:</label>
+                <input type="tel" name="cel_usuario" id="tel" placeholder="() _________" required>
+            </div>
+            <div>
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="sl">Selecione o assunto</option>
+                    <option value="rc">Reclamação</option>
+                    <option value="dv">Dúvidas</option>
+                    <option value="rt">Rastreamento de carga</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem_usuario" id="mensagem" rows="6" cols="40"></textarea>
+            </div>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
     </main>
 
     <footer>
