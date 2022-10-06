@@ -1,0 +1,51 @@
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 28px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url("../imagens/coisa.png");
+    top: 45%;
+    left: 5%;
+}
+button.slick-next { 
+    font-size: 0px;
+    border: none;
+    width: 28px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../imagens/coisa2.png');
+    top: 45%;
+    left: 95%;
+}
+.slick-slide {
+    width: 100%;
+
+}
+ul.slick-dots li {
+    display: inline-block;
+    font-size: 0px;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+}
+ul.slick-dots li.slick-active {
+    background-color: transparent;
+
+}
+    
+.servicos003 {
+    margin: 100px;
+    width: 4rem;
+    position: relative;
+    border: 1px solid black;
+}
+.test {
+    border: 1px solid blue;
+}
