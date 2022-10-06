@@ -6,7 +6,7 @@ main{
     position: relative;
     align-items: flex-start;;
     background-color: #d9d9d9;
-    color: steelblue;
+    color: #c2932f;
     font-weight: bold;
 }
 
@@ -19,7 +19,7 @@ h1{
     font-size: 4rem;
 }
 
-span{
+#msgErro{
     font-size: 1.2rem;
     display: block;
     position: relative;
@@ -27,6 +27,16 @@ span{
     top: 50px;
     left: 10%;
     color: red;
+}
+
+#msgSucesso{
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    float: left;
+    top: 50px;
+    left: 10%;
+    color: green;
 }
 
 form{
@@ -47,6 +57,7 @@ input, select{
     padding: 10px;
     border: none;
     border-bottom: 1px solid gray;
+    background-color: #d9d9d9;
     display: block;
 }
 
@@ -55,6 +66,7 @@ textarea{
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid gray;
+    background-color: #d9d9d9;
 }
 
 .ns, .fc{
@@ -72,11 +84,12 @@ button{
     padding: 10px;
     font-size: 1.4rem;
     border-radius: 5px;
+    background: #d9d9d9;
+
 }
 
 button:hover{
     transition: 0.2s;
     transform: scale(1.1);
-    background: #d9d9d9;
-    color: steelblue;
+    color: #c2932f;
 }

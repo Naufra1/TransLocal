@@ -28,7 +28,6 @@
 
     <main>
             <h1>Formulário</h1>
-            <span id="msgErro"></span>
 
             <form action="POST" id="formCont">
                 <div class="ns">
@@ -42,7 +41,7 @@
                     </div>
                     <div class="cpf">
                             <label for="cpf">CPF:</label>
-                            <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="___.___.___-__"  min="11" max="15">
+                            <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="___.___.___-__"  minlength="11" maxlength="15">
                         </div>
                 </div>
 
@@ -53,11 +52,11 @@
                     </div>
                     <div class="cel">
                         <label for="cel">Telefone:</label>
-                        <input type="tel" name="cel_usuario" id="tel" placeholder="() _________"  min="11" max="14">
+                        <input type="tel" name="cel_usuario" id="tel" placeholder="() _________"  minlength="11" maxlength="14">
                     </div>
                     <div class="endereco">
                         <label for="cep">Cep:</label>
-                        <input type="text" name="cep" id="cep" inputmode="numeric" placeholder="_____-___"  min="8" max="8">
+                        <input type="text" name="cep" id="cep" inputmode="numeric" placeholder="_____-___"  minlength="8" maxlength="8">
                     </div>
                 </div>
                 <div class="assunto">
@@ -74,16 +73,12 @@
                     <textarea name="mensagem_usuario" id="mensagem" placeholder="Escreva a sua mensagem aqui" rows="10" cols="100"></textarea>
                 </div>
                 <div class="botao">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="botao" onclick="test()">Enviar</button>
                 </div>
 
             </form>
 
     </main>
-
-    <footer>
-
-    </footer>
     <script src="java/Intcontato.js"></script>
 </body>
 

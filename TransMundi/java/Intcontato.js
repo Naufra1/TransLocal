@@ -1,83 +1,79 @@
-const formulario = document.querySelector("#formCont")
-formulario.onsubmit = event => {
+const formulario = document.querySelector("#formCont");
 
-    var nome = document.querySelector("#nome").value
-    console.log(nome)
-    //Validar o Input nome
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: preencha o formulário.</p>"
-    return
-    }
+function test(){
+    formulario.onsubmit = event => {
 
-    var nome = document.querySelector("#sobrenome").value
-    console.log(nome)
+        var nome = document.querySelector("#nome").value
+        //Validar o Input nome
+        if (nome === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu nome.")
+        return
+        }
     
-    //Validar o Input sobrenome
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite o seu sobrenome.</p>"
-    return
-    }
-
-    var nome = document.querySelector("#cpf").value
-    console.log(nome)
+        var sobrenome = document.querySelector("#sobrenome").value
+        //Validar o Input sobrenome
+        if (sobrenome === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu sobrenome.")
+        return
+        }
     
-    //Validar o Input cpf
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite o seu cpf.</p>"
-    return
-    }
-
-    var nome = document.querySelector("#cep").value
-    console.log(nome)
+        var cpf = document.querySelector("#cpf").value
+        //Validar o Input cpf
+        if (cpf === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu cpf.")
+        return
+        }
     
-    //Validar o Input cep
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite o seu cep.</p>"
-    return
-    }
-
-    var nome = document.querySelector("#email").value
-    console.log(nome)
+        var cep = document.querySelector("#cep").value
+        //Validar o Input cep
+        if (cep === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu cep.")
+        return
+        }
     
-    //Validar o Input email
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite o seu email.</p>"
-    return
-    }
-    //Validar o Input tel
-    var nome = document.querySelector("#tel").value
-    console.log(nome)
-    
+        var email = document.querySelector("#email").value
+        //Validar o Input email
+        if (email === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu email.")
+        return
+        }
+        
+        var tel = document.querySelector("#tel").value
+        //Validar o Input tel
+        if (tel === ""){
+        event.preventDefault()
+        alert("Erro: digite o seu telefone.")
+        return
+        }
+        
+        var mensagem = document.querySelector("#mensagem").value
+        //Validar o Input msg
+        if (mensagem === ""){
+        event.preventDefault()
+        alert("Erro: digite uma mensagem")
+        return
+        }
+        
+        var assunto = document.querySelector("#assunto").value
+        //Validar o Input assunto
+        if (assunto === ""){
+        event.preventDefault()
+        alert("Erro: escolha um assunto.")
+        return
+        } else{
+            document.getElementById("msgErro")
+            
+        }
 
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite o seu telefone.</p>"
-    return
-    }
-    //Validar o Input msg
-    var nome = document.querySelector("#mensagem").value
-    console.log(nome)
-    
-
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: digite uma mensagem</p>"
-    return
-    }
-    //Validar o Input assunto
-    var nome = document.querySelector("#assunto").value
-    console.log(nome)
-
-
-    if (nome === ""){
-    event.preventDefault()
-    document.getElementById("msgErro").innerHTML = "<p>Erro: escolha um assunto.</p>"
-    return
-    }
-    
+        //Mensagem de Envio Concluido.
+        var pegarElemento = document.getElementById("#botao");        
+        alert("Seu foi enviado com sucesso.")
+        event.preventDefault();
+        }
 }
+
