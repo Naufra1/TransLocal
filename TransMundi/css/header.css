@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
+    list-style: none;
 }
 
 body{
