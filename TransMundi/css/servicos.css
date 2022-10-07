@@ -8,23 +8,8 @@ body{
 
 .area{
     display: flex;
-
-main{
-    border: 1px solid black;
 }
-
-.area{
-    display: flex;
-    border: 1px solid black;
-
-    justify-content: space-evenly;
-}
-
 .cont_serv{
-
-
-    border: 3px solid black;
-
     display: flex;
     flex-direction: column;
     margin-left: 3%;
@@ -36,11 +21,6 @@ main{
     width: 520px;
     height: 250px;
     position: relative;
-
-
-
-    border: 1px solid black;
-
 }
 
 .texto_serv{
@@ -48,11 +28,6 @@ main{
     position: relative;
     width: 520px;
     padding-left: 2%;
-
-    
-
-    border: 1px solid black;
-
 }
 
 .texto_serv h3{
